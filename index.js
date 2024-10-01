@@ -12,5 +12,20 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map(tutorial => {
+    return tutorial 
+    .split(` `)
+    .map(world =>{
+      return world.charAt(0).toLocaleUpperCase()  + world.slice(1);
+    })
+    .join( ` `);
+  });
 }
+
+console.log(tittleCassed());
+
+  
+      
+
+  
+
